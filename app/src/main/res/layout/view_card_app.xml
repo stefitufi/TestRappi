@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              xmlns:app="http://schemas.android.com/tools"
+              xmlns:app1="http://schemas.android.com/apk/res-auto"
+              android:layout_margin="8dp">
+
+    <android.support.v7.widget.CardView
+        android:id="@+id/content_app_cv"
+        android:layout_width="match_parent"
+        android:layout_height="213dp"
+        android:clickable="true"
+        android:background="@color/colorPrimary"
+        android:foreground="?attr/selectableItemBackground"
+        app1:cardCornerRadius="4dp"
+        app:cardElevation="14dp">
+
+        <RelativeLayout
+         android:id="@+id/first_rl"
+         android:layout_width="wrap_content"
+         android:layout_height="194dp"
+         android:layout_margin="8dp">
+
+         <ImageView
+             xmlns:app="http://schemas.android.com/apk/res-auto"
+             android:id="@+id/image_app_iv"
+             android:layout_width="96dp"
+             android:layout_height="96dp"
+             android:background="@color/colorPrimary"
+             android:layout_alignParentTop="true"
+             android:layout_alignParentLeft="true"
+             android:layout_alignParentStart="true"/>
+
+         <TextView
+             android:id="@+id/title_app_tv"
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:layout_marginLeft="4dp"
+             android:textSize="20sp"
+             android:textColor="@color/black"
+             android:text="Tilte largo de la aplicacion"
+             android:alpha="0.7"
+             android:elegantTextHeight="true"
+             android:singleLine="true"
+             android:ellipsize="end"
+             android:layout_toRightOf="@+id/image_app_iv"
+             android:layout_alignTop="@+id/image_app_iv"/>
+
+         <TextView
+             android:id="@+id/author_app_tv"
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:layout_marginLeft="4dp"
+             android:textSize="20sp"
+             android:textColor="@color/black"
+             android:text="Author app"
+             android:alpha="0.5"
+             android:layout_toRightOf="@+id/image_app_iv"
+             android:layout_below="@+id/title_app_tv"/>
+
+         <TextView
+             android:id="@+id/score_app_tv"
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:layout_marginLeft="4dp"
+             android:textSize="20sp"
+             android:textColor="@color/black"
+             android:alpha="0.5"
+             android:layout_toRightOf="@+id/image_app_iv"
+             android:layout_below="@+id/author_app_tv"/>
+
+            <ImageView
+                android:id="@+id/like_iv"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:background="@drawable/ic_like_blue"
+                android:layout_marginTop="20dp"
+                android:layout_below="@+id/image_app_iv"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"/>
+
+            <TextView
+                android:id="@+id/like_app_tv"
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:textSize="20sp"
+                android:textColor="@color/black"
+                android:text="23"
+                android:alpha="0.5"
+                android:gravity="center_vertical"
+                android:layout_marginTop="20dp"
+                android:paddingLeft="8dp"
+                android:layout_below="@+id/image_app_iv"
+                android:layout_toRightOf="@+id/like_iv"
+                android:layout_toEndOf="@+id/like_iv"/>
+
+            <ImageView
+                android:id="@+id/comemment_iv"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:background="@drawable/ic_comment_blue"
+                android:layout_marginTop="10dp"
+                android:layout_below="@+id/like_iv"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"/>
+
+            <TextView
+                android:id="@+id/comemment_app_tv"
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:textSize="20sp"
+                android:textColor="@color/black"
+                android:text="0"
+                android:alpha="0.5"
+                android:gravity="center_vertical"
+                android:paddingRight="16dp"
+                android:layout_alignTop="@+id/comemment_iv"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentEnd="true"
+                android:layout_toRightOf="@+id/comemment_iv"
+                android:layout_toEndOf="@+id/comemment_iv"/>
+
+            <TextView
+                android:id="@+id/ver_mas_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="30dp"
+                android:textSize="20sp"
+                android:text="VER MAS"
+                android:onClick="true"
+                android:alpha="0.5"
+                android:textColor="@color/material_blue_800"
+                android:textStyle="bold"
+                android:gravity="center_vertical"
+                android:paddingRight="16dp"
+                android:layout_alignTop="@+id/comemment_iv"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentBottom="true"/>
+        </RelativeLayout>
+    </android.support.v7.widget.CardView>
+
+</LinearLayout>

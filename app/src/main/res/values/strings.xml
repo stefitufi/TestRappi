@@ -1,0 +1,22 @@
+<resources>
+    <string name="app_name">TestRappi</string>
+    <string name="loading">Cargando...</string>
+    <string name="not_connection">Hubo un problema con la conexion a internet...</string>
+    <string name="desable_connection">Sin conexión a internet</string>
+    <string name="enable_connection">Se encuntra con internet</string>
+
+    <!--String Transitions -->
+    <string name="transition_view">transition_view</string>
+    <string name="transition_splash">transicion_splash</string>
+    <string name="transition_background">transition_background</string>
+    <string name="toolbar">toolbar</string>
+
+    <!--String Categories Activity -->
+    <string name="title_activity_categories">Categorías</string>
+
+    <!-- String App Activity -->
+    <string name="title_activity_apps">Aplicaiones</string>
+
+    <string name="button_update">Start Update</string>
+    <string name="button_reverse">Is reverse</string>
+</resources>

@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_apps"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimary"
+    tools:context="stephania.com.reddit.activites.AppsActivity">
+
+    <include
+        android:id="@+id/toolbar_in"
+        layout="@layout/toolbar_layout"/>
+
+    <include
+        android:id="@+id/contet_header"
+        layout="@layout/view_item_category"
+        android:layout_width="match_parent"
+        android:layout_height="90dp"
+        android:layout_below="@+id/toolbar_in"/>
+
+    <android.support.v4.widget.SwipeRefreshLayout
+        android:id="@+id/refresh_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/contet_header">
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/content_app_rv"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+    </android.support.v4.widget.SwipeRefreshLayout>
+
+</RelativeLayout>
